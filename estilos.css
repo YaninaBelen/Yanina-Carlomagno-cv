@@ -1,0 +1,110 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Times New Roman', Times, serif
+}
+
+body {
+    background-color: #ffedd2;
+}
+
+nav {
+    padding: 30px;
+    background-color: #294122;
+
+}
+
+nav a {
+    padding-left: 20px;
+    padding-right: 20px;
+    text-decoration: none;
+    color: #ffbba6;
+    
+}
+
+nav a:hover {
+    font-size: 20pt;
+    color: #EB3D00;
+}
+
+.nombre {
+    width: 300px;
+    height: 300px;
+    margin: 50px 50px 0px 50px;
+    padding: 50px;
+    border: 5px solid #294122;
+    border-radius: 70px;
+
+}
+
+.nombre h1 {
+    color: #162114;
+    font-family: "Gilda Display", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 30pt;
+}
+
+#sobreMi {
+    padding: 40px 50px 50px 60px;
+    width: 370px;
+    height:auto
+}
+#sobreMi h2 {
+    font-family: "Gilda Display", serif;
+    color: #162114;
+    font-size: 16pt;
+    text-decoration:underline;
+}
+#sobreMi p {
+    padding-top:10px ;
+    text-indent: 20px;
+}
+
+#contacto {
+    padding: 0px 50px 50px 60px;
+    width: 370px;
+    height: auto;
+}
+#contacto h2 {
+    font-family: "Gilda Display", serif;
+    color: #162114;
+    font-size: 16pt;
+    text-decoration:underline;
+}
+#contacto ul li {
+    display: block ;
+    padding-top: 10px;
+}
+#contacto ul li p {
+    display: inline;
+}
+#contacto a {
+    text-decoration: none;
+    color: #162114;
+}
+#contacto a:hover {
+    font-size: 20pt;
+    color: #EB3D00;
+}
+
+#habilidades {
+    padding: 0px 50px 50px 60px;
+    width: 370px;
+    height: auto;
+}
+
+#habilidades h2 {
+    font-family: "Gilda Display", serif;
+    color: #162114;
+    font-size: 16pt;
+    text-decoration:underline;
+}
+#habilidades ul {
+    list-style-type:none;
+    padding-top:25px;
+}
+#habilidades ul li {
+    padding:5px 0px 5px 0px ;
+}
+
