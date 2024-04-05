@@ -108,3 +108,79 @@ nav a:hover {
     padding:5px 0px 5px 0px ;
 }
 
+#experiencia {
+    padding: 0px 50px 50px 60px;
+    width: 370px;
+    height: auto;
+}
+
+#experiencia h2 {
+    font-family: "Gilda Display", serif;
+    color: #162114;
+    font-size: 16pt;
+    text-decoration:underline;
+}
+
+#experiencia ul {
+    list-style-type:none;
+    padding-top:25px;
+}
+
+#experiencia ul li::before {
+    display: inline;
+    content: "✤";
+    color: #EB3D00;
+    /* Quería que quede al lado y no supe como pero asi me gustó también */
+}
+
+#experiencia ul li h3 {
+    font-family: "Gilda Display", serif;
+    font-size: 12pt ;
+    padding-bottom: 2px;
+}
+#experiencia ul li p {
+    padding-bottom: 18px;
+    text-indent: 20px;
+}
+
+#estudios {
+    padding: 0px 50px 50px 60px;
+    width: 370px;
+    height: auto;
+}
+
+#estudios h2 {
+    font-family: "Gilda Display", serif;
+    color: #162114;
+    font-size: 16pt;
+    text-decoration:underline;
+}
+
+#estudios ul {
+    list-style-type:none;
+    padding-top:25px;
+}
+
+#estudios ul li::before {
+    display: inline;
+    content: "✤";
+    color: #EB3D00;
+}
+
+#estudios ul li h3 {
+    font-family: "Gilda Display", serif;
+    font-size: 12pt ;
+    padding-bottom: 2px;
+}
+
+#estudios ul li p {
+    text-indent: 20px;
+}
+
+footer {
+    background-color: #294122;
+    color: #ffbba6;
+    height: 40px;
+    padding-top: 20px;
+    padding-left: 50px;
+}
