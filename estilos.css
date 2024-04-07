@@ -17,6 +17,9 @@ nav {
 nav a {
     padding-left: 20px;
     padding-right: 20px;
+    /*hay una forma más prolija de escribir los paddings y margins en una sola línea:
+    padding: 20px 0;
+    donde el primer valor es top y bottom, y el segundo left y right*/
     text-decoration: none;
     color: #ffbba6;
     
@@ -32,8 +35,8 @@ header {
 }
 
 .nombre {
-    width: 300px;
-    height: 300px;
+    width: 300px;  /*los anchos fijos no están buenos, en este caso no te va a generar tanto inconveniente porque el ancho es muy pequeño y no existen pantallas menores a 300, pero es mucho mejor utilizar max-width*/
+    height: 300px; /*la altura está bueno que te lo den los elementos internos, en este caso si sacás el height se ve casi igual, le agregaría 2px más de padding bottom de lo que ya tiene para que quede de 300px exactos*/
     margin: 50px 50px 0px 50px;
     padding: 50px;
     border: 5px solid #294122;
@@ -51,7 +54,7 @@ header {
 
 #sobre_mi {
     padding: 40px 50px 50px 60px;
-    width: 370px;
+    width: 370px; /*mismo problema de los anchos fijos, en este caso te convendría aplicar el max-width en el #sobre_mi p más abajo*/
     height:auto
 }
 #sobre_mi h2 {
@@ -62,7 +65,7 @@ header {
 }
 #sobre_mi p {
     padding-top:10px ;
-    text-indent: 20px;
+    text-indent: 20px; 
 }
 
 #contacto {
@@ -109,7 +112,7 @@ header {
     padding-top:25px;
 }
 #habilidades ul li {
-    padding:5px 0px 5px 0px ;
+    padding:5px 0px 5px 0px ; /*acá podrías resumir dos números igual que el nav a (línea 17)*/
 }
 
 #experiencia {
