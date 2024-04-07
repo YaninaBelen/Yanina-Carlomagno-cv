@@ -1,73 +1,190 @@
 * {
-    margin:0px;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Times New Roman', Times, serif
 }
-
-a {
-    color: #251D1E;
-    text-decoration: none;
-}
-
-a:hover {
-    color: #E6E288;
-}
-
 
 body {
-    background-color: #F1D2DE ;
-    font-family: 'Gill Sans', sans-serif;
+    background-color: #ffedd2;
 }
 
-nav  {
-    height: 50px;
-    padding: 15px;
-    background-color: #F094B8;
+nav {
+    padding: 30px;
+    background-color: #294122;
 
 }
 
 nav a {
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
     text-decoration: none;
-    color: #251D1E;
-}
-
-.nombre { 
-    padding-left: 40px;
-    padding-bottom: 40px;
-    padding-top: 20px;
-
-}
-.nombre h1 {
-    color: #251D1E;
-    font-size: 50px;
+    color: #ffbba6;
     
+}
+
+nav a:hover {
+    font-size: 20pt;
+    color: #EB3D00;
+}
+
+header {
+    width: auto;
+}
+
+.nombre {
+    width: 300px;
+    height: 300px;
+    margin: 50px 50px 0px 50px;
+    padding: 50px;
+    border: 5px solid #294122;
+    border-radius: 70px;
 
 }
 
-#sobreMi {
-    width: 500px;
-    height: fit-content;
-    padding-top: 40px;
-    padding-bottom: 40px;
-    padding-left: 40px;
+.nombre h1 {
+    color: #162114;
+    font-family: "Gilda Display", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 30pt;
+}
+
+#sobre_mi {
+    padding: 40px 50px 50px 60px;
+    width: 370px;
+    height:auto
+}
+#sobre_mi h2 {
+    font-family: "Gilda Display", serif;
+    color: #162114;
+    font-size: 16pt;
+    text-decoration:underline;
+}
+#sobre_mi p {
+    padding-top:10px ;
+    text-indent: 20px;
 }
 
 #contacto {
-    width: 500px;
-    height: fit-content;
-    padding-top: 40px;
-    padding-bottom: 40px;
-    padding-left: 40px;
+    padding: 0px 50px 50px 60px;
+    width: 370px;
+    height: auto;
+}
+#contacto h2 {
+    font-family: "Gilda Display", serif;
+    color: #162114;
+    font-size: 16pt;
+    text-decoration:underline;
+}
+#contacto ul li {
+    display: block ;
+    padding-top: 10px;
+}
+#contacto ul li p {
+    display: inline;
+}
+#contacto a {
+    text-decoration: none;
+    color: #162114;
+}
+#contacto a:hover {
+    font-size: 20pt;
+    color: #EB3D00;
 }
 
 #habilidades {
-    width: 500px;
-    height: fit-content;
-    padding-top: 40px;
-    padding-bottom: 40px;
-    padding-left: 40px;
+    padding: 0px 50px 50px 60px;
+    width: 370px;
+    height: auto;
 }
 
+#habilidades h2 {
+    font-family: "Gilda Display", serif;
+    color: #162114;
+    font-size: 16pt;
+    text-decoration:underline;
+}
 #habilidades ul {
-    
+    list-style-type:none;
+    padding-top:25px;
+}
+#habilidades ul li {
+    padding:5px 0px 5px 0px ;
+}
+
+#experiencia {
+    padding: 0px 50px 50px 60px;
+    width: 370px;
+    height: auto;
+}
+
+#experiencia h2 {
+    font-family: "Gilda Display", serif;
+    color: #162114;
+    font-size: 16pt;
+    text-decoration:underline;
+}
+
+#experiencia ul {
+    list-style-type:none;
+    padding-top:25px;
+}
+
+#experiencia ul li::before {
+    display: inline;
+    content: "✤";
+    color: #EB3D00;
+    /* Quería que quede al lado y no supe como pero asi me gustó también */
+}
+
+#experiencia ul li h3 {
+    font-family: "Gilda Display", serif;
+    font-size: 12pt ;
+    padding-bottom: 2px;
+}
+#experiencia ul li p {
+    padding-bottom: 18px;
+    text-indent: 20px;
+}
+
+#estudios {
+    padding: 0px 50px 50px 60px;
+    width: 370px;
+    height: auto;
+}
+
+#estudios h2 {
+    font-family: "Gilda Display", serif;
+    color: #162114;
+    font-size: 16pt;
+    text-decoration:underline;
+}
+
+#estudios ul {
+    list-style-type:none;
+    padding-top:25px;
+}
+
+#estudios ul li::before {
+    display: inline;
+    content: "✤";
+    color: #EB3D00;
+}
+
+#estudios ul li h3 {
+    font-family: "Gilda Display", serif;
+    font-size: 12pt ;
+    padding-bottom: 2px;
+}
+
+#estudios ul li p {
+    text-indent: 20px;
+}
+
+footer {
+    background-color: #294122;
+    color: #ffbba6;
+    height: 40px;
+    padding-top: 20px;
+    padding-left: 50px;
 }
