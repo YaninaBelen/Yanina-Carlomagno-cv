@@ -1,193 +1,23 @@
 * {
-    margin: 0px;
-    padding: 0px;
-    font-family: 'Times New Roman', Times, serif
-}
-
-body {
-    background-color: #ffedd2;
-}
-
-nav {
-    padding: 30px;
-    background-color: #294122;
-
-}
-
-nav a {
-    padding-left: 20px;
-    padding-right: 20px;
-    /*hay una forma más prolija de escribir los paddings y margins en una sola línea:
-    padding: 20px 0;
-    donde el primer valor es top y bottom, y el segundo left y right*/
-    text-decoration: none;
-    color: #ffbba6;
-    
-}
-
-nav a:hover {
-    font-size: 20pt;
-    color: #EB3D00;
+    margin: 0%;
+    padding: 0%;
 }
 
 header {
+    height: 70px;
     width: auto;
+    background-color: #B3596B;
 }
 
-.nombre {
-    width: 300px;  /*los anchos fijos no están buenos, en este caso no te va a generar tanto inconveniente porque el ancho es muy pequeño y no existen pantallas menores a 300, pero es mucho mejor utilizar max-width*/
-    height: 300px; /*la altura está bueno que te lo den los elementos internos, en este caso si sacás el height se ve casi igual, le agregaría 2px más de padding bottom de lo que ya tiene para que quede de 300px exactos*/
-    margin: 50px 50px 0px 50px;
-    padding: 50px;
-    border: 5px solid #294122;
-    border-radius: 70px;
-
+nav {
+    height: 70px;
+    width: auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
-.nombre h1 {
-    color: #162114;
-    font-family: "Gilda Display", serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 30pt;
-}
-
-#sobre_mi {
-    padding: 40px 50px 50px 60px;
-    width: 370px; /*mismo problema de los anchos fijos, en este caso te convendría aplicar el max-width en el #sobre_mi p más abajo*/
-    height:auto
-}
-#sobre_mi h2 {
-    font-family: "Gilda Display", serif;
-    color: #162114;
-    font-size: 16pt;
-    text-decoration:underline;
-}
-#sobre_mi p {
-    padding-top:10px ;
-    text-indent: 20px; 
-}
-
-#contacto {
-    padding: 0px 50px 50px 60px;
-    width: 370px;
-    height: auto;
-}
-#contacto h2 {
-    font-family: "Gilda Display", serif;
-    color: #162114;
-    font-size: 16pt;
-    text-decoration:underline;
-}
-#contacto ul li {
-    display: block ;
-    padding-top: 10px;
-}
-#contacto ul li p {
-    display: inline;
-}
-#contacto a {
+nav a {
+    color: #EBA8A8;
     text-decoration: none;
-    color: #162114;
-}
-#contacto a:hover {
-    font-size: 20pt;
-    color: #EB3D00;
-}
-
-#habilidades {
-    padding: 0px 50px 50px 60px;
-    width: 370px;
-    height: auto;
-}
-
-#habilidades h2 {
-    font-family: "Gilda Display", serif;
-    color: #162114;
-    font-size: 16pt;
-    text-decoration:underline;
-}
-#habilidades ul {
-    list-style-type:none;
-    padding-top:25px;
-}
-#habilidades ul li {
-    padding:5px 0px 5px 0px ; /*acá podrías resumir dos números igual que el nav a (línea 17)*/
-}
-
-#experiencia {
-    padding: 0px 50px 50px 60px;
-    width: 370px;
-    height: auto;
-}
-
-#experiencia h2 {
-    font-family: "Gilda Display", serif;
-    color: #162114;
-    font-size: 16pt;
-    text-decoration:underline;
-}
-
-#experiencia ul {
-    list-style-type:none;
-    padding-top:25px;
-}
-
-#experiencia ul li::before {
-    display: inline;
-    content: "✤";
-    color: #EB3D00;
-    /* Quería que quede al lado y no supe como pero asi me gustó también */
-}
-
-#experiencia ul li h3 {
-    font-family: "Gilda Display", serif;
-    font-size: 12pt ;
-    padding-bottom: 2px;
-}
-#experiencia ul li p {
-    padding-bottom: 18px;
-    text-indent: 20px;
-}
-
-#estudios {
-    padding: 0px 50px 50px 60px;
-    width: 370px;
-    height: auto;
-}
-
-#estudios h2 {
-    font-family: "Gilda Display", serif;
-    color: #162114;
-    font-size: 16pt;
-    text-decoration:underline;
-}
-
-#estudios ul {
-    list-style-type:none;
-    padding-top:25px;
-}
-
-#estudios ul li::before {
-    display: inline;
-    content: "✤";
-    color: #EB3D00;
-}
-
-#estudios ul li h3 {
-    font-family: "Gilda Display", serif;
-    font-size: 12pt ;
-    padding-bottom: 2px;
-}
-
-#estudios ul li p {
-    text-indent: 20px;
-}
-
-footer {
-    background-color: #294122;
-    color: #ffbba6;
-    height: 40px;
-    padding-top: 20px;
-    padding-left: 50px;
 }
