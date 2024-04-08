@@ -1,6 +1,7 @@
 * {
     margin: 0%;
     padding: 0%;
+    
 }
 
 header {
@@ -20,4 +21,210 @@ nav {
 nav a {
     color: #EBA8A8;
     text-decoration: none;
+    font-family: "Spicy Rice", serif;
+    font-weight: 100;
+    font-size: 15pt;
+}
+
+nav a:hover {
+    color: #1F4172;
+}
+
+.nombre {
+    background-color: #F1B4BB;
+    height: 640px;
+    width: auto;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+}
+
+.nombre h1 {
+    font-family: "Spicy Rice", serif;
+    font-size: 65pt;
+    padding: 50px ;
+    line-height: 75px;
+    color:#B3596B ;
+    letter-spacing: 2px ;
+}
+
+.nombre h1::after {
+    padding-top: 10px;
+    content: "✤";
+    display: block;
+}
+
+.nombre img {
+    width: 60%;
+    height: auto;
+}
+
+#sobre_mi {
+    height: 710px;
+    width: auto;
+    background-color: #1F4172;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+#sobre_mi img {
+    width: auto;
+    height: 800px;
+    align-self: center;
+}
+
+.info_sobremi {
+    height: fit-content;
+    width: 600px;
+    align-self:center;
+    margin: 300px;
+    color: #FDF0F0;
+} 
+h2 {
+     font-family: "Spicy Rice", serif;
+     font-weight: 100;
+     letter-spacing: 1px;
+}
+
+p {
+    font-family: "Alegreya Sans", sans-serif;
+    font-weight: 400;
+}
+
+#experiencia {
+    height: 710px;
+    width: auto;
+    background-color: #F1B4BB;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+}
+
+#experiencia img {
+    width: auto;
+    height:1030px;
+}
+
+.info_exp {
+    height: fit-content;
+    width: 550px;
+    align-self:center;
+    margin: 250px;
+    color:#1F4172 ;
+}
+
+h3 {
+    font-family: "Spicy Rice", serif;
+    font-size: 12pt ;
+     font-weight: 100;
+     letter-spacing: 1px;
+     padding-top: 10px;
+}
+
+ul {
+    list-style: "✤";
+    padding-top: 10px;
+}
+
+#estudios {
+    height: 710px;
+    width: auto;
+    background-color: #1F4172;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#estudios img {
+    height: 1300px;
+    width: auto;
+}
+
+.info_estudios {
+    height: fit-content;
+    width: 500px;
+    margin: 200px;
+    color:#FDF0F0;
+}
+
+#habilidades {
+    height: 710px;
+    width: auto;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    background-color: #F1B4BB;
+}
+
+#habilidades img {
+    height: 1115px;
+    width: auto;
+}
+
+.info_habilidades {
+    align-self: center;
+    height: fit-content;
+    width:max-content ;
+    margin: 170px;
+    color: #1F4172;
+}
+
+.info_habilidades ul li::before {
+    content: "✤";
+}
+
+.info_habilidades ul li {
+    display: flex;
+    align-items: baseline;
+}
+.info_habilidades ul li p {
+    padding-left: 20px;
+}
+
+.txt_habilidades {
+    padding-top: 20px ;
+}
+
+footer {
+    height: 150px;
+    width: 100%;
+    background-color: #B3596B;
+}
+
+footer h2 {
+    padding: 25px;
+    height: fit-content;
+    width: 100%;
+    color: #FDF0F0;
+    display: flex;
+    justify-content: center;
+    
+
+}
+
+#contacto ul {
+    font-family: "Alegreya Sans", sans-serif;
+    font-weight: 400;
+    color: #FDF0F0;
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+}
+
+#contacto ul li{
+    display: flex;
+}
+#contacto ul li a {
+    text-decoration: none;
+    color: #FDF0F0;
+    padding: 0px 10px;
+}
+
+#contacto ul li a:hover {
+    color: #1F4172;
 }
