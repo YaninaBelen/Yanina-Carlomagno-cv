@@ -5,25 +5,26 @@
 }
 
 header {
-    height: 70px;
-    width: auto;
+    position: fixed;
+    height: 10%;
+    width: 100%;
     background-color: #B3596B;
+    
 }
 
 nav {
-    height: 70px;
-    width: auto;
+    padding: 20px;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-} /*la distribución de la info es muy buna y te deja aplicar flex en varios lugares, el problema es que cuando voy a una sección desde el nav lo termino perdiendo y si quiero volver arriba queda incómodo o con ✨una mala experiencia de usuario✨, fijate cómo usar positio fixed para que te quede visible siempre que lo veas, vas a tener que configurar ciertas cosas más que cuando esté esto aplicado vamos a revisar, pero por ahora eso*/
+} 
 
 nav a {
     color: #EBA8A8;
     text-decoration: none;
     font-family: "Spicy Rice", serif;
     font-weight: 100;
-    font-size: 15pt;
+    font-size: 1.2em;
 }
 
 nav a:hover {
@@ -32,8 +33,7 @@ nav a:hover {
 
 .nombre {
     background-color: #F1B4BB;
-    height: 640px; /*entiendo a donde va enfocado el diseño, para estos casos hay una medida especial que es vh, que significa viewport height (altura del dispositivo) y funciona igual que los porcentajes. por ejemplo, si yo quisiese que la altura sea de toda la pantalla, ya sea en una de 1920*1080 o de 1280x720, no es lo mismo establecer que el alto sea de 1080 y de 720, por eso podríamos poner 100vh y se va a adaptar a cada una de las pantallas. En este caso creo que sería de unos 80vh aprox. Tenés que probarlo vos e ir testeando cómo queda */
-    width: auto; /*auto aparece por default, no hace falta ponerlo*/
+    height: 100vh;
     overflow: hidden;
     display: flex;
     align-items: center;
@@ -41,7 +41,7 @@ nav a:hover {
 
 .nombre h1 {
     font-family: "Spicy Rice", serif;
-    font-size: 65pt; /*si te animás a buscar, hay una medida que se usa más profesionalmente para las tipos en web que son los em, sino así va bien*/
+    font-size: 5em;
     padding: 50px ;
     line-height: 75px;
     color:#B3596B ;
@@ -59,45 +59,26 @@ nav a:hover {
     height: auto;
 }
 
-#sobre_mi {
-    height: 710px;
-    width: auto;
-    background-color: #1F4172;
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: space-between;
-    overflow: hidden;
-} /*veo que todas las sections tienen casi los mismos estilos, te convendría establecer para todas las sections en gral el mismo estilo y para los casos particulares otras cosas, quedando así:
-
-section {
-    height: 710px;
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: space-between;
-    overflow: hidden;
-}
-
 #sobre_mi, #estudios {
+    height: 100vh;
     background-color: #1F4172;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
 }
-
-#nombre, #experiencia {
-    background-color: #F1B4BB;
-}
-
-y así con los distintos fondos que quieras aplicar para hacer un archivo más corto*/
 
 #sobre_mi img {
-    width: auto;
-    height: 800px;
+    height: 140%;
     align-self: center;
 }
 
 .info_sobremi {
     height: fit-content;
-    width: 600px; /*en lugar de medidas fijas podés usar la propiedad max-width, así tu contenido es flexible pero hasta los 600px*/
+    max-width: 600px;
     align-self: center;
-    margin: 300px; /*este margin está haciendo ruido, en general no está bueno que sean mayores a 100px porque quiere decir que hay otra forma de resolverlo. veo que si lo sacamos te queda marginado a la derecha y podríamos sacarlo de distintas formas porque habría que repensar cada caja de información, fijate si ajustando con lo que te dejé en html va mejor o no, y sino lo vemos mejor el viernes en vivo*/
+    padding: 300px;
     color: #FDF0F0;
 } 
 h2 {
@@ -111,8 +92,8 @@ p {
     font-weight: 400;
 }
 
-#experiencia {
-    height: 710px;
+#experiencia, #habilidades{
+    height: 100vh;
     width: auto;
     background-color: #F1B4BB;
     display: flex;
@@ -123,20 +104,18 @@ p {
 
 #experiencia img {
     width: auto;
-    height:1030px;
+    height:160%;
 }
 
 .info_exp {
-    height: fit-content;
-    width: 550px;
     align-self:center;
     margin: 250px;
-    color:#1F4172 ;
+    color:#1F4172;
 }
 
 h3 {
     font-family: "Spicy Rice", serif;
-    font-size: 12pt ;
+    font-size: 1em ;
      font-weight: 100;
      letter-spacing: 1px;
      padding-top: 10px;
@@ -147,47 +126,24 @@ ul {
     padding-top: 10px;
 }
 
-#estudios {
-    height: 710px;
-    width: auto;
-    background-color: #1F4172;
-    overflow: hidden;
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: space-between;
-    align-items: center;
-}
-
 #estudios img {
-    height: 1300px;
+    height: 200%;
     width: auto;
 }
 
 .info_estudios {
-    height: fit-content;
-    width: 500px;
-    margin: 200px;
+    padding: 200px;
     color:#FDF0F0;
 }
 
-#habilidades {
-    height: 710px;
-    width: auto;
-    overflow: hidden;
-    display: flex;
-    justify-content: space-between;
-    background-color: #F1B4BB;
-}
-
 #habilidades img {
-    height: 1115px;
+    height: 150%;
     width: auto;
+    align-self: flex-start;
 }
 
 .info_habilidades {
     align-self: center;
-    height: fit-content;
-    width:max-content ;
     margin: 170px;
     color: #1F4172;
 }
@@ -209,15 +165,14 @@ ul {
 }
 
 footer {
-    height: 150px;
-    width: 100%;
+    padding: 10px;
     background-color: #B3596B;
+    display: flex;
+    justify-content: center;
 }
 
 footer h2 {
-    padding: 25px;
-    height: fit-content; /*este no está haciendo nada*/
-    width: 100%; /*este ancho te está generando un scroll horizontal, además si lo sacás no afecta al diseño y se ve mucho mejor*/
+    padding: 10px;
     color: #FDF0F0;
     display: flex;
     justify-content: center;
@@ -228,11 +183,13 @@ footer h2 {
 #contacto ul {
     font-family: "Alegreya Sans", sans-serif;
     font-weight: 400;
+    padding: 20px;
     color: #FDF0F0;
     display: flex;
     justify-content: space-evenly;
     list-style: none;
-} /*los elementos están muy separados entre sí, yo creo que podríamos poner un max width para que la caja creazca hasta cierto punto*/
+    max-width: 900px;
+}
 
 #contacto ul li{
     display: flex;
