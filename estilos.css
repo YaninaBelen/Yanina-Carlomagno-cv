@@ -17,7 +17,7 @@ header {
 
 nav {
     max-width: 1600px;
-    height: 100%;
+    height: 100%; /*esto no hace nada*/
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -27,9 +27,9 @@ nav a {
     color: #EBA8A8;
     text-decoration: none;
     font-family: "Spicy Rice", serif;
-    font-weight: 100;
+    font-weight: 100; /*esto no hace nada*/
     font-size: 1.2em;
-    padding: 0px 40px;
+    padding: 0px 40px; /*en lugar de usar estos paddings y margins va a funcionar mejor usar el space-evenly del nav, que ya está aplicado, pero hace falta agregar un widht de 100% para que ocupe todo el lugar, el max-width está bien*/
     margin: 0px 40px;
     cursor: url('img/cursor_click.png'), auto;
 }
@@ -72,7 +72,7 @@ nav a:hover {
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;
-    align-items: center;
+    align-items: center; /*esto no hace nada*/
     overflow: hidden;
 }
 
@@ -83,12 +83,13 @@ nav a:hover {
 }
 
 .info_sobremi {
-    height: fit-content;
-    max-width: 600px;
-    align-self: center;
-    padding: 300px;
+    height: fit-content; /*esto no hace nada*/
+    max-width: 600px; /*en realidad esto debería estar aplicado a los hijos (h2 y p) para que esos no crezcan más de 600px, junto a un width de 100%, pero este div debería llenar todo lo que pueda, así se puede centrar. Guarda que con esto se te va a descentrar el h2 del footer.*/
+    align-self: center; /* una vez aplicado el resto de los elementos de este selector, esto no hace nada*/
+    padding: 300px; /*en lugar de un padding tan grande te conviene aplicar flex y centrar los dos hijos (h2 y p)*/
     color: #FDF0F0;
-} 
+} /*una vez soluciones esto en esta parte arreglá el resto*/
+
 h2 {
     font-family: "Spicy Rice", serif;
     font-weight: 100;
@@ -187,7 +188,7 @@ footer h2 {
     
 
 }
-
+/*para pasar al html, header y footer no llevan sections, solo divs*/
 #contacto ul {
     font-family: "Alegreya Sans", sans-serif;
     font-weight: 400;
