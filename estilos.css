@@ -29,7 +29,9 @@ nav a {
     font-family: "Spicy Rice", serif;
     font-weight: 100;
     font-size: 1.2em;
-    padding: 0px 80px;
+    padding: 0px 40px;
+    margin: 0px 40px;
+    cursor: url('img/cursor_click.png'), auto;
 }
 
 nav a:hover {
@@ -88,9 +90,9 @@ nav a:hover {
     color: #FDF0F0;
 } 
 h2 {
-     font-family: "Spicy Rice", serif;
-     font-weight: 100;
-     letter-spacing: 1px;
+    font-family: "Spicy Rice", serif;
+    font-weight: 100;
+    letter-spacing: 1px;
 }
 
 p {
@@ -122,9 +124,9 @@ p {
 h3 {
     font-family: "Spicy Rice", serif;
     font-size: 1em ;
-     font-weight: 100;
-     letter-spacing: 1px;
-     padding-top: 10px;
+    font-weight: 100;
+    letter-spacing: 1px;
+    padding-top: 10px;
 }
 
 ul {
@@ -204,6 +206,7 @@ footer h2 {
     text-decoration: none;
     color: #EBA8A8;
     padding: 0px 10px;
+cursor: url('img/cursor_click.png'), auto;
 }
 
 #contacto ul li a:hover {
