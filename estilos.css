@@ -5,6 +5,8 @@
     
 }
 
+/*botonera*/
+
 header {
     position: fixed;
     height: 10%;
@@ -17,7 +19,7 @@ header {
 
 nav {
     max-width: 1600px;
-    height: 100%; /*esto no hace nada*/
+    width: 100%;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -27,16 +29,15 @@ nav a {
     color: #EBA8A8;
     text-decoration: none;
     font-family: "Spicy Rice", serif;
-    font-weight: 100; /*esto no hace nada*/
     font-size: 1.2em;
-    padding: 0px 40px; /*en lugar de usar estos paddings y margins va a funcionar mejor usar el space-evenly del nav, que ya está aplicado, pero hace falta agregar un widht de 100% para que ocupe todo el lugar, el max-width está bien*/
-    margin: 0px 40px;
     cursor: url('img/cursor_click.png'), auto;
 }
 
 nav a:hover {
     color: #1F4172;
 }
+
+/*Apartado nombre y foto de perfil */
 
 .nombre {
     background-color: #F1B4BB;
@@ -61,10 +62,15 @@ nav a:hover {
     display: block;
 }
 
-.nombre img {
-    width: 60%;
-    height: auto;
+.foto_perfil {
+    background-image: url(img/foto_perfil2.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 75%;
 }
+
+/* flex y color de fondo de las páginas azules */
 
 #sobre_mi, #estudios {
     height: 100vh;
@@ -72,34 +78,49 @@ nav a:hover {
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;
-    align-items: center; /*esto no hace nada*/
     overflow: hidden;
 }
 
-#sobre_mi img {
-    height: 140%;
-    align-self: center;
-    width: auto;
+/* foto apartado sobre mi */
+
+.foto_sobremi { 
+   background-image: url(img/taza_rosa.webp);
+   background-size: cover;
+   background-position: center;
+   width: 60%;
+   height: 100vh;
 }
 
-.info_sobremi {
-    height: fit-content; /*esto no hace nada*/
-    max-width: 600px; /*en realidad esto debería estar aplicado a los hijos (h2 y p) para que esos no crezcan más de 600px, junto a un width de 100%, pero este div debería llenar todo lo que pueda, así se puede centrar. Guarda que con esto se te va a descentrar el h2 del footer.*/
-    align-self: center; /* una vez aplicado el resto de los elementos de este selector, esto no hace nada*/
-    padding: 300px; /*en lugar de un padding tan grande te conviene aplicar flex y centrar los dos hijos (h2 y p)*/
-    color: #FDF0F0;
-} /*una vez soluciones esto en esta parte arreglá el resto*/
+/* Contenido textual de las páginas azules */
 
-h2 {
+.info_sobremi, .info_estudios {
+    width: 100%; 
+    color: #FDF0F0;
+    display: flex;
+    flex-direction: column;
+    align-items: center ;
+    justify-content: center;
+} 
+
+/* Tipografía de los apartados */
+
+.info_sobremi h2, #experiencia h2, #habilidades h2, #estudios h2 {
+    max-width: 600px;
     font-family: "Spicy Rice", serif;
     font-weight: 100;
     letter-spacing: 1px;
+
+    /*profe y ahora como hago para que el h2 me margine con la p :( */
+
 }
 
 p {
+    max-width: 600px;
     font-family: "Alegreya Sans", sans-serif;
     font-weight: 400;
 }
+
+/*flex y color de fondo de las páginas rosadas*/
 
 #experiencia, #habilidades{
     height: 100vh;
@@ -111,16 +132,28 @@ p {
     overflow: hidden;
 }
 
-#experiencia img {
-    width: auto;
-    height:160%;
+/*imagen apartado experiencia*/
+
+.imagen_exp {
+    background-image: url(img/experiencia.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 50%;
+    height: 100vh;
 }
 
-.info_exp {
-    align-self:center;
-    margin: 250px;
+/* Contenido textual de las páginas rosadas */
+
+.info_exp, .info_habilidades {
     color:#1F4172;
+    width: 100%; 
+    display: flex;
+    flex-direction: column;
+    align-items: center ;
+    justify-content: center;
 }
+
+/*texto de las habilidades*/
 
 h3 {
     font-family: "Spicy Rice", serif;
@@ -130,32 +163,33 @@ h3 {
     padding-top: 10px;
 }
 
+/*definicion del bullet de las listas*/
+
 ul {
     list-style: "✤";
     padding-top: 10px;
 }
 
-#estudios img {
-    height: 200%;
-    width: auto;
+/*imagen apartado estudios*/
+
+.imagen_estudios{
+   background-image: url(img/boceto_cranch.jpg);
+   background-size: cover;
+   width: 140%;
+   height: 150vh;
+   background-position: center;
 }
 
-.info_estudios {
-    padding: 200px;
-    color:#FDF0F0;
+/*imagen apartado habilidades*/
+
+.foto_habilidades {
+    background-image: url(img/quererme.jpg);
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
 }
 
-#habilidades img {
-    height: 150%;
-    width: auto;
-    align-self: flex-start;
-}
-
-.info_habilidades {
-    align-self: center;
-    margin: 170px;
-    color: #1F4172;
-}
+/*Parte textual de la info de habilidades*/
 
 .info_habilidades ul li::before {
     content: "✤";
@@ -173,6 +207,8 @@ ul {
     padding-top: 20px ;
 }
 
+/*footer*/
+
 footer {
     padding: 10px;
     background-color: #B3596B;
@@ -180,15 +216,17 @@ footer {
     justify-content: center;
 }
 
-footer h2 {
+footer address h2 {
     padding: 10px;
     color: #EBA8A8;
     display: flex;
     justify-content: center;
+    font-family: "Spicy Rice", serif;
+    font-weight: 100;
+    letter-spacing: 1px;
     
 
 }
-/*para pasar al html, header y footer no llevan sections, solo divs*/
 #contacto ul {
     font-family: "Alegreya Sans", sans-serif;
     font-weight: 400;
@@ -207,7 +245,7 @@ footer h2 {
     text-decoration: none;
     color: #EBA8A8;
     padding: 0px 10px;
-cursor: url('img/cursor_click.png'), auto;
+    cursor: url('img/cursor_click.png'), auto;
 }
 
 #contacto ul li a:hover {
