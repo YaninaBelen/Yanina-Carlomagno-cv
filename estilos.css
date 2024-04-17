@@ -67,7 +67,7 @@ nav a:hover {
     background-size: cover;
     background-position: center;
     height: 100vh;
-    width: 75%;
+    width: 95%;
 }
 
 /* flex y color de fondo de las páginas azules */
@@ -87,7 +87,7 @@ nav a:hover {
    background-image: url(img/taza_rosa.webp);
    background-size: cover;
    background-position: center;
-   width: 60%;
+   width: 75%;
    height: 100vh;
 }
 
