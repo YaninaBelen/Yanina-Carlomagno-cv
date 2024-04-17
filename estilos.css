@@ -41,8 +41,8 @@ nav a:hover {
 
 .nombre {
     background-color: #F1B4BB;
-    height: 100vh;
-    overflow: hidden;
+    height: 100vh; /*como el div de la foto tiene este mismo alto no hace falta ponerlo aca*/
+    overflow: hidden; /*ya no hace falta esta propiedad*/
     display: flex;
     align-items: center;
 }
@@ -73,12 +73,12 @@ nav a:hover {
 /* flex y color de fondo de las páginas azules */
 
 #sobre_mi, #estudios {
-    height: 100vh;
+    height: 100vh; /*ya si el contenido tiene la altura (las fotos) el tamaño de esta caja se va a adaptar a eso, no hace falta ponerlo aca*/
     background-color: #1F4172;
     display: flex;
     flex-direction: row-reverse;
-    justify-content: space-between;
-    overflow: hidden;
+    justify-content: space-between; /*esto no hace nada*/
+    overflow: hidden; /*esto es viejo*/
 }
 
 /* foto apartado sobre mi */
@@ -123,14 +123,14 @@ p {
 /*flex y color de fondo de las páginas rosadas*/
 
 #experiencia, #habilidades{
-    height: 100vh;
-    width: auto;
+    height: 100vh; /*esto no hace nada*/
+    width: auto; /*esto no hace nada*/
     background-color: #F1B4BB;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    overflow: hidden;
-}
+    justify-content: space-between; /*esto no hace nada*/
+    align-items: center; /*esto no hace nada*/
+    overflow: hidden; /*esto es viejo*/
+} 
 
 /*imagen apartado experiencia*/
 
@@ -150,7 +150,7 @@ p {
     display: flex;
     flex-direction: column;
     align-items: center ;
-    justify-content: center;
+    justify-content: center; /*esto no hace nada*/
 }
 
 /*texto de las habilidades*/
@@ -177,8 +177,8 @@ ul {
 .imagen_estudios{
    background-image: url(img/boceto_cranch.jpg);
    background-size: cover;
-   width: 140%;
-   height: 150vh;
+   width: 140%; /*a nivel diseño creo que quedó muy grande por el ritmo que venía teniendo la página, la img debería de acompañar al texto y no ganarle*/
+   height: 150vh; /*si bajás el ancho y este también seguro que se va a ver más completa, sino debería estar seteada desde el mismo archivo, también me parece raro que sea distinta a las otras imagenes, por qué?*/
    background-position: center;
 }
 
